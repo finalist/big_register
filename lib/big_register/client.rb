@@ -19,7 +19,7 @@ module BIGRegister
 
     def initialize
       wsdl = "http://webservices-acc.cibg.nl/Ribiz/OpenbaarV2.asmx?wsdl"
-      @client = Savon.client(wsdl: wsdl, log_level: :warn)
+      @client = Savon.client(wsdl: wsdl, log: false)
     end
 
     def list_hcp(initials, name, gender, specialism)

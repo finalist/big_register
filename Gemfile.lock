@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    big_register (0.0.1)
+    big_register (0.0.2)
+      savon (~> 2.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -68,7 +69,6 @@ DEPENDENCIES
   big_register!
   pry-nav (~> 0.2.3)
   rspec (~> 2.12.0)
-  savon (~> 2.1.0)
   spec_coverage (~> 0.0.5)
   vcr (~> 2.4.0)
   webmock

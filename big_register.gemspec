@@ -14,10 +14,11 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.homepage      = 'http://github.com/finalist/big_register'
 
+  gem.add_dependency "savon",          "~> 2.1.0"
+
   gem.add_development_dependency "pry-nav",        "~> 0.2.3"
   gem.add_development_dependency "rspec",          "~> 2.12.0"
   gem.add_development_dependency "spec_coverage",  "~> 0.0.5"
   gem.add_development_dependency "vcr",            "~> 2.4.0"
   gem.add_development_dependency "webmock"
-  gem.add_development_dependency "savon",          "~> 2.1.0"
 end
