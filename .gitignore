@@ -11,6 +11,10 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+rspec.html
+
+# RBX files
+.rbx/
 
 # YARD artifacts
 .yardoc
