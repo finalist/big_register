@@ -18,7 +18,7 @@ module BIGRegister
                   }
 
     def initialize
-      wsdl = "http://webservices-acc.cibg.nl/Ribiz/OpenbaarV2.asmx?wsdl"
+      wsdl = "http://webservices.cibg.nl/Ribiz/OpenbaarV2.asmx?wsdl"
       @client = Savon.client(wsdl: wsdl, log: false)
     end
 

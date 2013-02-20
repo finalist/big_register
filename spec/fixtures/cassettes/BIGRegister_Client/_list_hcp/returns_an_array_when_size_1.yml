@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://webservices-acc.cibg.nl/Ribiz/OpenbaarV2.asmx?wsdl
+    uri: http://webservices.cibg.nl/Ribiz/OpenbaarV2.asmx?wsdl
     body:
       encoding: US-ASCII
       string: ''
@@ -27,7 +27,7 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Tue, 19 Feb 2013 12:33:48 GMT
+      - Wed, 20 Feb 2013 09:21:42 GMT
       Transfer-Encoding:
       - chunked
       Proxy-Connection:
@@ -197,19 +197,18 @@ http_interactions:
         minOccurs=\"1\" maxOccurs=\"1\" name=\"Article3\" type=\"s:boolean\" />\r\n
         \         <s:element minOccurs=\"1\" maxOccurs=\"1\" name=\"Article34\" type=\"s:boolean\"
         />\r\n          <s:element minOccurs=\"1\" maxOccurs=\"1\" name=\"BusinessOwner\"
-        type=\"s:decimal\" />\r\n          <s:element minOccurs=\"1\" maxOccurs=\"1\"
-        name=\"RequiredHoursForReregistration\" type=\"s:int\" />\r\n        </s:sequence>\r\n
-        \     </s:complexType>\r\n      <s:complexType name=\"ArrayOfTypeOfSpecialism\">\r\n
-        \       <s:sequence>\r\n          <s:element minOccurs=\"0\" maxOccurs=\"unbounded\"
-        name=\"TypeOfSpecialism\" nillable=\"true\" type=\"tns:TypeOfSpecialism\"
-        />\r\n        </s:sequence>\r\n      </s:complexType>\r\n      <s:complexType
-        name=\"TypeOfSpecialism\">\r\n        <s:sequence>\r\n          <s:element
-        minOccurs=\"1\" maxOccurs=\"1\" name=\"Code\" type=\"s:decimal\" />\r\n          <s:element
-        minOccurs=\"0\" maxOccurs=\"1\" name=\"Description\" type=\"s:string\" />\r\n
-        \         <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"DescriptionEn\"
+        type=\"s:decimal\" />\r\n        </s:sequence>\r\n      </s:complexType>\r\n
+        \     <s:complexType name=\"ArrayOfTypeOfSpecialism\">\r\n        <s:sequence>\r\n
+        \         <s:element minOccurs=\"0\" maxOccurs=\"unbounded\" name=\"TypeOfSpecialism\"
+        nillable=\"true\" type=\"tns:TypeOfSpecialism\" />\r\n        </s:sequence>\r\n
+        \     </s:complexType>\r\n      <s:complexType name=\"TypeOfSpecialism\">\r\n
+        \       <s:sequence>\r\n          <s:element minOccurs=\"1\" maxOccurs=\"1\"
+        name=\"Code\" type=\"s:decimal\" />\r\n          <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"Description\" type=\"s:string\" />\r\n          <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"DescriptionEn\" type=\"s:string\" />\r\n
+        \         <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TitleOfSpecialist\"
         type=\"s:string\" />\r\n          <s:element minOccurs=\"0\" maxOccurs=\"1\"
-        name=\"TitleOfSpecialist\" type=\"s:string\" />\r\n          <s:element minOccurs=\"0\"
-        maxOccurs=\"1\" name=\"TitleOfSpecialistEn\" type=\"s:string\" />\r\n          <s:element
+        name=\"TitleOfSpecialistEn\" type=\"s:string\" />\r\n          <s:element
         minOccurs=\"0\" maxOccurs=\"1\" name=\"Register\" type=\"s:string\" />\r\n
         \         <s:element minOccurs=\"1\" maxOccurs=\"1\" name=\"EndDate\" nillable=\"true\"
         type=\"s:dateTime\" />\r\n          <s:element minOccurs=\"0\" maxOccurs=\"1\"
@@ -253,15 +252,15 @@ http_interactions:
         />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
         />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
         \ <wsdl:service name=\"PublicV3\">\r\n    <wsdl:port name=\"PublicV3Soap\"
-        binding=\"tns:PublicV3Soap\">\r\n      <soap:address location=\"http://webservices-acc.cibg.nl/Ribiz/OpenbaarV2.asmx\"
+        binding=\"tns:PublicV3Soap\">\r\n      <soap:address location=\"http://webservices.cibg.nl/Ribiz/OpenbaarV2.asmx\"
         />\r\n    </wsdl:port>\r\n    <wsdl:port name=\"PublicV3Soap12\" binding=\"tns:PublicV3Soap12\">\r\n
-        \     <soap12:address location=\"http://webservices-acc.cibg.nl/Ribiz/OpenbaarV2.asmx\"
+        \     <soap12:address location=\"http://webservices.cibg.nl/Ribiz/OpenbaarV2.asmx\"
         />\r\n    </wsdl:port>\r\n  </wsdl:service>\r\n</wsdl:definitions>"
     http_version: 
-  recorded_at: Tue, 19 Feb 2013 12:33:48 GMT
+  recorded_at: Wed, 20 Feb 2013 09:21:42 GMT
 - request:
     method: post
-    uri: http://webservices-acc.cibg.nl/Ribiz/OpenbaarV2.asmx
+    uri: http://webservices.cibg.nl/Ribiz/OpenbaarV2.asmx
     body:
       encoding: US-ASCII
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -294,7 +293,7 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Tue, 19 Feb 2013 12:33:49 GMT
+      - Wed, 20 Feb 2013 09:21:45 GMT
       Content-Length:
       - '978'
       Proxy-Connection:
@@ -309,5 +308,5 @@ http_interactions:
         Schoemacher</MailingName><Initial>R.</Initial><Gender>M</Gender><ArticleRegistration><ArticleRegistrationExtApp><ArticleRegistrationNumber>29023753101</ArticleRegistrationNumber><ArticleRegistrationStartDate>1998-03-11T00:00:00</ArticleRegistrationStartDate><ArticleRegistrationEndDate>0001-01-01T00:00:00</ArticleRegistrationEndDate><ProfessionalGroupCode>01</ProfessionalGroupCode></ArticleRegistrationExtApp></ArticleRegistration><Specialism
         /><Mention /><JudgmentProvision /><Limitation /></ListHcpApprox3></ListHcpApprox></ListHcpApprox3Result></soap:Body></soap:Envelope>
     http_version: 
-  recorded_at: Tue, 19 Feb 2013 12:33:49 GMT
+  recorded_at: Wed, 20 Feb 2013 09:21:45 GMT
 recorded_with: VCR 2.4.0
