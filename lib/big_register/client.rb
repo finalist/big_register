@@ -17,6 +17,15 @@ module BIGRegister
                   "60" => "Ziekenhuisfarmacie", "61" => "Klinische psychologie", "62" => "Interne geneeskunde-allergologie"
                   }
 
+    PROFESSION = {"01" => "Artsen", "02" => "Tandartsen", "03" => "Verloskundigen", "04" => "Fysiotherapeuten",
+                   "16" => "Psychotherapeuten", "17" => "Apothekers", "18" => "Apotheekhoudende artsen", "25" => "Gz-psychologen",
+                   "30" => "Verpleegkundigen", "87" => "Optometristen", "88" => "Huidtherapeuten", "89" => "Dietisten",
+                   "90" => "Ergotherapeuten", "91" => "Logopedisten", "92" => "Mondhygienisten", "93" => "Oefentherapeuten Mensendieck",
+                   "94" => "Oefentherapeuten Cesar", "95" => "Orthoptisten", "96" => "Podotherapeuten", "97" => "Radiodiagnostisch laboranten",
+                   "98" => "Radiotherapeutisch laboranten", "99" => "Onbekend", "83" => "Apothekersassistenten", "85" => "Tandprothetica",
+                   "86" => "Verzorgenden individuele gezondheidszorg"
+                  }
+
     def initialize
       wsdl = "http://webservices.cibg.nl/Ribiz/OpenbaarV2.asmx?wsdl"
       @client = Savon.client(wsdl: wsdl, log: false)

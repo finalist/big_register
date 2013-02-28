@@ -43,5 +43,9 @@ module BIGRegister
       end
     end
 
+    it "should return a profession" do
+      BIGRegister::Client::PROFESSION.fetch("01").should eql "Artsen"
+    end
+
   end
 end
