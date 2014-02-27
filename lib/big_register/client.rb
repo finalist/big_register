@@ -44,8 +44,12 @@ module BIGRegister
         "WebSite" => "Ribiz",
         "RegistrationNumber" => big_number
       }
-      response = @client.call(:list_hcp_approx3, message: message)
-      format_response(response)
+      begin
+        response = @client.call(:list_hcp_approx3, message: message)
+        format_response(response)
+      rescue Savon::SOAPFault => e
+        raise NotFoundError.new(e.message)
+      end
     end
 
     private
@@ -69,4 +73,8 @@ module BIGRegister
     end
 
   end
+
+  class NotFoundError < StandardError
+  end
+
 end
